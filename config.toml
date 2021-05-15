@@ -8,7 +8,6 @@ description = "IT Support Technician"
 profilePicture = "images/profile.jpg"
 
 
-
 [[params.socialIcons]]
 icon = "fab fa-linkedin"
 title = "Linkedin"
