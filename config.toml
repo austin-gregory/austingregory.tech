@@ -1,0 +1,15 @@
+baseURL = "https://austingregory.tech/"
+languageCode = "en-us"
+
+[params]
+title = "Austin Gregory"
+author = "Austin Gregory"
+description = "IT Support Technician"
+profilePicture = "images/profile.jpg"
+
+
+
+[[params.socialIcons]]
+icon = "fab fa-linkedin"
+title = "Linkedin"
+url = "https://www.linkedin.com/in/austinggregory/"
