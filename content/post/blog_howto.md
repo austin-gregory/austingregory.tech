@@ -8,7 +8,7 @@ tags = [
 ]
 +++
 
-Easly setup a site using Hugo staic site generator. Automatically push changes from GitHub to Azure Static WebApps. Hosting is free while in preveiw.
+Easly setup a site using Hugo static site generator. Automatically push changes from GitHub to Azure Static WebApps. Hosting is free while in preveiw.
 <!--more-->
 
 

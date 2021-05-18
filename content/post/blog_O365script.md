@@ -8,7 +8,7 @@ tags = [
 ]
 +++
 
-A Powershell script for user deactivation. A quick alternative to suing the O365 admin center
+A Powershell script for user deactivation. A quick alternative to suing the O365 admin center.
 <!--more-->
 
 ### What it does
