@@ -12,3 +12,15 @@ profilePicture = "images/profile.jpg"
 icon = "fab fa-linkedin"
 title = "Linkedin"
 url = "https://www.linkedin.com/in/austinggregory/"
+
+  [[main]]
+  name = "Home"
+  identifier = "home"
+  weight = 100
+  url = "/"
+
+  [[main]]
+  name = "Posts"
+  weight = 200
+  identifier = "posts"
+  url = "/post/"

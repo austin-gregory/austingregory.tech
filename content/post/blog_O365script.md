@@ -66,10 +66,10 @@ do {
 
 ### How to use
 
-1. Copy code to a text fiel and save with .ps1 extension
+1. Copy code to a text file and save with .ps1 extension
 2. Install Powershell Module and set Execution Policy (Set-ExecutionPolicy RemoteSigned,
 Install-Module MSOnline, Import-Module Msonline)
 3. Execute .ps1 file from powershell
-4. Enter O365 global admin credetials when prompted 
+4. Enter O365 global admin credentials when prompted 
 
 
