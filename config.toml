@@ -13,14 +13,17 @@ icon = "fab fa-linkedin"
 title = "Linkedin"
 url = "https://www.linkedin.com/in/austinggregory/"
 
-  [[main]]
-  name = "Home"
-  identifier = "home"
-  weight = 100
-  url = "/"
+[[params.socialIcons]]
+icon = "fas fa-envelope"
+title = "e-mail"
+url = "mailto:aag5194@outlook.com"
 
-  [[main]]
-  name = "Posts"
-  weight = 200
-  identifier = "posts"
-  url = "/post/"
+
+[[params.socialIcons]]
+icon = "fas fa-home"
+title = "Home"
+url = "/"
+
+
+
+
