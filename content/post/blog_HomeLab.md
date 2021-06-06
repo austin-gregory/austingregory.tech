@@ -8,7 +8,7 @@ tags:
   
 ---
 
-Overview of the test lab I setup using recycled hardware. Services include, Windows RDP and OpenVPN integrated with LDAP authentication. Remote administration is handled using the Xen Orchestra web interface. Secure access is provided by SSH key-based authentication and tunneled HTTP traffic using SOCKS/Proxy Chains. 
+Overview of the test lab I setup using recycled hardware. Services include, Windows RDP and OpenVPN integrated with LDAP authentication. Remote administration is handled using the Xen Orchestra web interface. Secure access is provided with SSH key-based authentication. HTTP traffic is tunnelled  through SSH using SOCKS/Proxy Chains. 
 <!--more-->
 
 
