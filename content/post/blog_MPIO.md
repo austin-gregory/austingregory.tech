@@ -8,7 +8,7 @@ tags = [
 ]
 +++
 
-Setup iSCSI multipathing for higher throughput and redundancy, In this guide I show the steps needed to setup MPIO using XenServer (XCP-ng) hosts and a FreeNAS storage server.
+Setup iSCSI multipathing for higher throughput and redundancy, In this guide I show the steps needed to setup MPIO using XenServer (XCP-ng) hosts and a FreeNAS storage server. I use round robin as the path selector to double iSCSi performance of my 4 disk array.
 <!--more-->
 
 
@@ -23,7 +23,7 @@ Setup iSCSI multipathing for higher throughput and redundancy, In this guide I s
 
 ## 1. Configure IP interfaces 
 
-I set Xen host management IPs directly from the console after install, then added them to XCP-ng center to configure storage interfaces. FreeNAS is configured using the web interface. I use round robin as the path selector to double iSCSi performance of my 4 disk array.
+I set Xen host management IPs directly from the console after install, then added them to XCP-ng center to configure storage interfaces. FreeNAS is configured using the web interface. 
 
 
 - XEN-MASTER 
