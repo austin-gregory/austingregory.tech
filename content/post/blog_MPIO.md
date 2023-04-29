@@ -33,7 +33,7 @@ I set Xen host management IPs directly from the console after install, then adde
 - XEN-HOST-01
     - Management = 192.168.64.9
     - Storage1 = 10.0.0.9
-    - Storage = 10.0.1.9
+    - Storage2 = 10.0.1.9
 - FreeNAS
     - Management = 192.168.64.5
     - Storage1 = 10.0.0.5

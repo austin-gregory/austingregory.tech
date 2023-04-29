@@ -4,8 +4,8 @@ languageCode = "en-us"
 [params]
 title = "Austin Gregory"
 author = "Austin Gregory"
-description = "IT Support Technician"
-profilePicture = "images/profile.jpg"
+description = "Network Administrator"
+profilePicture = "images/profile.png"
 
 
 [[params.socialIcons]]
