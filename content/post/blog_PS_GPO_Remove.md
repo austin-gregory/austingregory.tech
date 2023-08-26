@@ -66,13 +66,13 @@ $content | Out-File -FilePath $filepath -Encoding utf8 -Append
 
 2. Set the triggers up so the task will only run once at creation time.
 
-![GPO Task 2](/images/GPO_Task1.PNG)
+![GPO Task 2](/images/GPO_Task2.PNG)
 
 3. Specify actions that will start powershell locally and execute the script from a network share.
 
-![GPO Task 3](/images/GPO_Task1.PNG)
+![GPO Task 3](/images/GPO_Task3.PNG)
 
-![GPO Task 4](/images/GPO_Task1.PNG)
+![GPO Task 4](/images/GPO_Task4.PNG)
 
 Program Path: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
 
