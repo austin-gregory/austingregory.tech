@@ -15,9 +15,18 @@ jobs:
     runs-on: ubuntu-latest
     name: Build and Deploy Job
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
         with:
-          submodules: true
+          node-version: "20"
+          cache: npm
+      - name: Install & build (Next.js static export)
+        run: |
+          npm ci
+          npm run build
+          # SWA reads its config from the uploaded artifacts root (out/),
+          # not the repo root, so copy it into the build output.
+          cp staticwebapp.config.json out/
       - name: Build And Deploy
         id: builddeploy
         uses: Azure/static-web-apps-deploy@v1
@@ -25,12 +34,11 @@ jobs:
           azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN_AMBITIOUS_SAND_041F4370F }}
           repo_token: ${{ secrets.GITHUB_TOKEN }} # Used for Github integrations (i.e. PR comments)
           action: "upload"
-          ###### Repository/Build Configurations - These values can be configured to match your app requirements. ######
-          # For more information regarding Static Web App workflow configurations, please visit: https://aka.ms/swaworkflowconfig
-          app_location: "/" # App source code path
-          api_location: "api" # Api source code path - optional
-          output_location: "public" # Built app content directory - optional
-          ###### End of Repository/Build Configurations ######
+          # Pre-built above, so just upload /out. With skip_app_build=true,
+          # output_location is ignored — app_location points at the artifacts.
+          skip_app_build: true
+          app_location: "out"
+          api_location: ""
 
   close_pull_request_job:
     if: github.event_name == 'pull_request' && github.event.action == 'closed'
